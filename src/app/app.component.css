@@ -1,0 +1,30 @@
+a {
+    text-decoration: none;
+    color: white
+}
+.mat-toolbar{
+    background-color: #74B72E;
+}
+.menu .mat-sidenav-content{
+    border-radius: 20px;
+}
+a:hover, a:active {
+    color: green;
+}
+.navigation-items{
+    display: grid;
+    place-items: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.navigation-items li{
+    padding-left: 30px;
+}
+.menu-title{
+    font-size: 30px;
+  }
+
+mat-sidenav{
+    width: 250px;
+}

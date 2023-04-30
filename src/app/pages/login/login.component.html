@@ -1,0 +1,29 @@
+<span class="loading-indicator" *ngIf="loading">
+    <mat-spinner color="accent"></mat-spinner>
+</span>
+
+<div class="main_component login">
+    <form [formGroup]="loginForm" (ngSubmit)="login()">
+        <div>
+            <h1>Bejelentkezés</h1>
+            <mat-form-field>
+                <mat-label for="email">E-mail cím:</mat-label>
+                <input matInput type="text" formControlName="email">
+                <mat-error *ngIf="loginForm.get('email')?.invalid">
+                    Az email cím formátuma nem megfelelő!
+                </mat-error>
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label for="password">Jelszó:</mat-label>
+                <input matInput type="password" formControlName="password">
+                <mat-error *ngIf="loginForm.get('password')?.invalid">
+                    A jelszó túl rövid!
+                </mat-error>
+            </mat-form-field>
+        </div>
+        <span>
+            <span><button mat-raised-button color="secondary" type="submit">Belépés</button></span>
+            <span><button  mat-raised-button color="primary" routerLink="/signup">Regisztráció</button></span>
+        </span>
+    </form>
+</div>

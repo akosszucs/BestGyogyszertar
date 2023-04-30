@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "best-gyogyszertar": {
+      "hosting": {
+        "gyogyszertar-app": [
+          "best-gyogyszertar"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "best-gyogyszertar"
+  }
+}

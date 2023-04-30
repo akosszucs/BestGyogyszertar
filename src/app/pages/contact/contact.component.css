@@ -1,0 +1,37 @@
+mat-card {
+    width: 80%;
+    height: 80%;
+    align-self: center;
+}
+.green-title{
+    color: green;
+}
+mat-card-header {
+    display: initial;
+}
+.div-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 80%;
+}
+.div-flex p{
+    margin-left: 16px;
+}
+.div-flex .mat-card-title{
+    margin-left: 16px;
+}
+.mat-card-content .mat-icon{
+    margin-right: 20px;
+    padding-top: 10px;
+}
+.main_component {
+    height: 100vh;
+}
+.heading{
+    font-size: large;
+    font-weight: 500;
+}
+.mat-card-header-text{
+    margin: unset !important;
+}

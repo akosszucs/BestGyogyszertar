@@ -1,0 +1,15 @@
+mat-card-actions button{
+    width: 100%;
+}
+.gyogyszerek .mat-card{
+    height: 400px;
+    max-width: 240px;
+    min-width: 240px;
+    background-color: #74B72E !important;
+}
+.gyogyszerek img{
+    max-height: 250px;
+}
+mat-card{
+    margin-bottom: 50px; 
+}

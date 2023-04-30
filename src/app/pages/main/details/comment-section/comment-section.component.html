@@ -1,0 +1,39 @@
+<div class="main_component">
+    <ng-container [ngSwitch]="comments.length">
+        <div *ngSwitchCase="0">
+            <h3 class="no_comment_warning">Ehhez a gyógyszerhez még nem érkezett komment.</h3>
+        </div>
+        <div *ngSwitchDefault>
+            <table>
+                <thead>
+                  <tr>
+                    <th>User</th>
+                    <th>Comment</th>
+                    <th>Date</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr *ngFor="let comment of comments; let i = index;">
+                    <td>{{comment.username}}</td>
+                    <td>{{comment.comment}}</td>
+                    <td>{{comment.date | dateFormat}}</td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+    </ng-container>
+    
+    
+    <div class="break"></div>
+    <form *ngIf="user" [formGroup]="commentsForm" (ngSubmit)="addComment()" style="width: 40%; border: 3px solid #74B72E; padding: 10px; border-radius: 20px;">
+        <mat-form-field>
+            <mat-label for="comment">Kommentben jelezheted mennyire tetszett a termék: </mat-label>
+            <textarea matInput rows="10" cols="50" formControlName="comment" placeholder="Írj egy kommentet!"></textarea>
+        </mat-form-field>
+    
+        <div class="break"></div>
+        <span>
+            <span><button mat-raised-button color="secondary" type="submit" style="color: #74B72E">Hozzáadás</button></span>
+        </span>
+    </form>
+</div>
