@@ -1,5 +1,7 @@
 # Best Gyogyszertar
 
+Webfejlesztési keretrendszerek kötprog 2023. A publikus oldalt a https://best-gyogyszertar.web.app/ oldalon éred el. Ha valami probléma merülne fel, vagy esetleg kérdésed lenne discordon megtalálsz: Szűcs Ákos#2449
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.3.3.
 
 ## Development server
